@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Das Autoservice | Wolfgang Dietz – Ihre freie Kfz-Meisterwerkstatt in Oberkochen. Wartung, Inspektion, TÜV/AU, Klimaservice und Elektronik-Diagnose auf Meister-Niveau.">
+    <meta name="keywords" content="Werkstatt Oberkochen, Kfz Meisterbetrieb, Auto Reparatur, Wolfgang Dietz, Das Autoservice, Reifenservice, TÜV AU, Inspektion, Klimaservice">
+    <meta name="author" content="Wolfgang Dietz">
+    <meta name="robots" content="index, follow">
+    <title>Das Autoservice | Wolfgang Dietz – Meisterwerkstatt in Oberkochen</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Leaflet.js Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+    <!-- LocalBusiness Schema Markup for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Das Autoservice / Wolfgang Dietz",
+      "image": "assets/workshop_hero.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heidenheimer Straße 114",
+        "addressLocality": "Oberkochen",
+        "postalCode": "73447",
+        "addressCountry": "DE"
+      },
+      "telephone": "+497364919778",
+      "email": "wolfgang.dietz@das-autoservice.de",
+      "url": "https://das-autoservice.de",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container navbar">
+            <a href="#home" class="logo">
+                <img src="assets/logo_transparent.png?v=4" alt="D.A.S. Dietz Autoservice" class="logo-img">
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Start</a></li>
+                    <li><a href="#services" class="nav-link">Leistungen</a></li>
+                    <li><a href="#tires" class="nav-link">Reifen & Achse</a></li>
+                    <li><a href="#tire-finder" class="nav-link">Reifen-Finder</a></li>
+                    <li><a href="#parts" class="nav-link">Teilesuche</a></li>
+                    <li><a href="#cars" class="nav-link">Gebrauchtwagen</a></li>
+                    <li><a href="#booking" class="nav-link">Termin anfragen</a></li>
+                    <li><a href="#about" class="nav-link">Über uns</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle btn-secondary btn-icon" aria-label="Farbschema wechseln">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="#booking" class="btn btn-primary start-wizard-btn">Termin buchen</a>
+                
+                <div class="menu-toggle" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tagline">
+                        <i class="fas fa-certificate"></i> Meisterbetrieb in Oberkochen
+                    </div>
+                    <h1 class="hero-title">Zuverlässiger Kfz-Service auf <span>Meister-Niveau</span>.</h1>
+                    <p class="hero-desc">
+                        Ob Wartung, Inspektion nach Herstellervorgaben, Reifenservice oder komplexe Fehlerdiagnose. Wolfgang Dietz und sein Team bringen Ihr Auto schnell und zuverlässig wieder auf die Straße.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#booking" class="btn btn-primary start-wizard-btn">Online-Terminplaner <i class="fas fa-calendar-check"></i></a>
+                        <a href="tel:07364919778" class="btn btn-secondary">Direkt anrufen <i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/workshop_hero.png" alt="Moderne Kfz-Werkstatt mit Diagnosegeräten" class="hero-image" width="600" height="480">
+                    </div>
+                    <div class="hero-badge glass-panel">
+                        <div class="badge-icon flex-center">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="badge-text">
+                            <h4>Wolfgang Dietz</h4>
+                            <p>Kfz-Meister & Inhaber</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Wizard (Interactive Lead Capture) -->
+        <section id="booking" class="wizard-section section">
+            <div class="container">
+                <div class="text-center section-header reveal">
+                    <h2>Online-Terminanfrage</h2>
+                    <p>In nur 4 einfachen Schritten Ihren Wunschtermin anfragen. Wolfgang Dietz meldet sich umgehend bei Ihnen.</p>
+                </div>
+                
+                <div class="wizard-container glass-panel reveal">
+                    <!-- Stepper progress -->
+                    <div class="wizard-stepper">
+                        <div class="wizard-progress-bar"></div>
+                        <div class="step-indicator active">
+                            <div class="step-number flex-center">1</div>
+                            <span class="step-title">Leistungen</span>
+                        </div>
+                        <div class="step-indicator">
+                            <div class="step-number flex-center">2</div>
+                            <span class="step-title">Fahrzeug</span>
+                        </div>
+                        <div class="step-indicator">
+                            <div class="step-number flex-center">3</div>
+                            <span class="step-title">Wunschtermin</span>
+                        </div>
+                        <div class="step-indicator">
+                            <div class="step-number flex-center">4</div>
+                            <span class="step-title">Kontakt</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Wizard Steps Content -->
+                    <div class="wizard-steps">
+                        
+                        <!-- Step 1: Select services -->
+                        <div class="wizard-step active">
+                            <h3 class="text-center">Welche Dienstleistungen benötigen Sie?</h3>
+                            <p class="text-center" style="margin-bottom: 2rem;">Wählen Sie eine oder mehrere Optionen aus:</p>
+                            <div class="services-selection">
+                                <div class="service-select-card text-center" data-service="wartung">
+                                    <div class="select-card-icon"><i class="fas fa-clipboard-check"></i></div>
+                                    <div class="select-card-title">Inspektion</div>
+                                    <div class="select-card-info">Nach Herstellervorgabe</div>
+                                </div>
+                                <div class="service-select-card text-center" data-service="tuev">
+                                    <div class="select-card-icon"><i class="fas fa-shield-halved"></i></div>
+                                    <div class="select-card-title">TÜV / AU</div>
+                                    <div class="select-card-info">Hauptuntersuchung im Haus</div>
+                                </div>
+                                <div class="service-select-card text-center" data-service="reifen">
+                                    <div class="select-card-icon"><i class="fas fa-circle-notch"></i></div>
+                                    <div class="select-card-title">Reifenservice</div>
+                                    <div class="select-card-info">Wechsel & Wuchten</div>
+                                </div>
+                                <div class="service-select-card text-center" data-service="vermessung">
+                                    <div class="select-card-icon"><i class="fas fa-crosshairs"></i></div>
+                                    <div class="select-card-title">Achsvermessung</div>
+                                    <div class="select-card-info">Beissbarth Q.Lign 3D</div>
+                                </div>
+                                <div class="service-select-card text-center" data-service="unfall">
+                                    <div class="select-card-icon"><i class="fas fa-car-burst"></i></div>
+                                    <div class="select-card-title">Unfallschaden</div>
+                                    <div class="select-card-info">Instandsetzung & Lack</div>
+                                </div>
+                                <div class="service-select-card text-center" data-service="reparaturen">
+                                    <div class="select-card-icon"><i class="fas fa-gears"></i></div>
+                                    <div class="select-card-title">Reparatur</div>
+                                    <div class="select-card-info">Verschleißteile & Bremsen</div>
+                                </div>
+                                <div class="service-select-card text-center" data-service="klima">
+                                    <div class="select-card-icon"><i class="fas fa-wind"></i></div>
+                                    <div class="select-card-title">Klimaservice</div>
+                                    <div class="select-card-info">Wartung & Desinfektion</div>
+                                </div>
+                                <div class="service-select-card text-center" data-service="diagnose">
+                                    <div class="select-card-icon"><i class="fas fa-car-battery"></i></div>
+                                    <div class="select-card-title">Diagnose</div>
+                                    <div class="select-card-info">Elektronik & Fehlercode</div>
+                                </div>
+                                <div class="service-select-card text-center" data-service="oel">
+                                    <div class="select-card-icon"><i class="fas fa-oil-can"></i></div>
+                                    <div class="select-card-title">Ölwechsel</div>
+                                    <div class="select-card-info">Inkl. Filterwechsel</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Vehicle details -->
+                        <div class="wizard-step">
+                            <h3 class="text-center" style="margin-bottom: 2rem;">Fahrzeugdaten eingeben</h3>
+                            <div class="car-info-form">
+                                <div class="form-group">
+                                    <label class="form-label" for="vehicle-brand">Hersteller / Marke *</label>
+                                    <input class="form-input" type="text" id="vehicle-brand" placeholder="z.B. VW, BMW, Audi" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="vehicle-model">Modell *</label>
+                                    <input class="form-input" type="text" id="vehicle-model" placeholder="z.B. Golf, 3er, A4" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="vehicle-year">Baujahr (optional)</label>
+                                    <input class="form-input" type="number" id="vehicle-year" placeholder="z.B. 2018" min="1950" max="2030">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="vehicle-plate">Kennzeichen (optional)</label>
+                                    <input class="form-input" type="text" id="vehicle-plate" placeholder="z.B. AA-WD-110">
+                                </div>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">* Pflichtfelder</p>
+                        </div>
+                        
+                        <!-- Step 3: Date & Time selection -->
+                        <div class="wizard-step">
+                            <h3 class="text-center" style="margin-bottom: 2rem;">Wählen Sie Ihren Wunschtermin</h3>
+                            <div class="date-time-container">
+                                <div class="form-group">
+                                    <label class="form-label" for="appointment-date">Datum auswählen</label>
+                                    <input class="form-input" type="date" id="appointment-date">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Bevorzugte Uhrzeit</label>
+                                    <div class="time-slots">
+                                        <div class="time-slot" data-time="08:00 - 10:00">08:00 - 10:00</div>
+                                        <div class="time-slot" data-time="10:00 - 12:00">10:00 - 12:00</div>
+                                        <div class="time-slot" data-time="13:00 - 15:00">13:00 - 15:00</div>
+                                        <div class="time-slot" data-time="15:00 - 17:00">15:00 - 17:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4: Contact details & Summary -->
+                        <div class="wizard-step">
+                            <h3 class="text-center" style="margin-bottom: 2rem;">Zusammenfassung & Kontaktdaten</h3>
+                            <div class="summary-container">
+                                <div class="summary-item">
+                                    <span class="summary-label">Services:</span>
+                                    <span class="summary-value" id="summary-services">Keine ausgewählt</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Fahrzeug:</span>
+                                    <span class="summary-value" id="summary-vehicle">Keine Daten</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Termin:</span>
+                                    <span class="summary-value" id="summary-date">Nicht gewählt</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Kunde:</span>
+                                    <span class="summary-value" id="summary-name">Kein Name</span>
+                                </div>
+                            </div>
+                            
+                            <div class="car-info-form">
+                                <div class="form-group">
+                                    <label class="form-label" for="contact-name">Ihr vollständiger Name *</label>
+                                    <input class="form-input" type="text" id="contact-name" placeholder="z.B. Max Mustermann" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="contact-phone">Telefonnummer *</label>
+                                    <input class="form-input" type="tel" id="contact-phone" placeholder="z.B. 0170 1234567" required>
+                                </div>
+                                <div class="form-group form-group-full">
+                                    <label class="form-label" for="contact-email">E-Mail-Adresse *</label>
+                                    <input class="form-input" type="email" id="contact-email" placeholder="z.B. max@muster.de" required>
+                                </div>
+                                <div class="form-group form-group-full">
+                                    <label class="form-label" for="contact-message">Zusätzliche Nachricht / Anmerkung (optional)</label>
+                                    <textarea class="form-input" id="contact-message" rows="3" placeholder="Beschreiben Sie kurz Ihr Anliegen oder nennen Sie Besonderheiten..."></textarea>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">* Pflichtfelder</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Wizard Actions Panel -->
+                    <div class="wizard-actions">
+                        <button id="wizard-prev" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Zurück</button>
+                        <button id="wizard-next" class="btn btn-primary" disabled>Weiter <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    
+                    <!-- Success state panel -->
+                    <div class="wizard-success">
+                        <div class="success-icon-wrapper flex-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h2>Anfrage erfolgreich übermittelt!</h2>
+                        <p style="max-width: 500px; margin: 1rem auto 2rem auto;">
+                            Wir haben Ihre Anfrage erfasst. Ihr E-Mail-Programm sollte sich nun mit allen Details geöffnet haben. Bitte senden Sie die E-Mail ab, um die Anfrage direkt an Wolfgang Dietz zu übermitteln.
+                        </p>
+                        <a href="#booking" onclick="window.location.reload();" class="btn btn-primary">Neue Anfrage stellen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-catalog section">
+            <div class="container">
+                <div class="text-center section-header reveal">
+                    <h2>Unsere Leistungen</h2>
+                    <p>Qualifizierte Beratung, fachgerechte Reparaturen und Wartung aller Marken – direkt in Oberkochen.</p>
+                </div>
+                
+                <div class="grid grid-3 reveal">
+                    
+                    <!-- Service 1 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <h3>Wartung & Inspektion</h3>
+                        <p>Durchführung nach strengen Herstellervorgaben. So bleibt Ihre Fahrzeuggarantie in vollem Umfang erhalten. Inklusive Eintrag ins digitale Serviceheft.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Inspektion ab <span>Auf Anfrage</span></div>
+                            <a href="#booking" class="service-link start-wizard-btn" data-select-service="wartung">Buchen <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>TÜV / AU Abnahme</h3>
+                        <p>Wir bereiten Ihr Fahrzeug optimal vor und lassen die Haupt- und Abgasuntersuchung (HU/AU) direkt bei uns im Haus durch Prüforganisationen durchführen.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">TÜV / AU <span>im Haus</span></div>
+                            <a href="#booking" class="service-link start-wizard-btn" data-select-service="tuev">Buchen <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fas fa-circle-notch"></i></div>
+                        <h3>Reifenservice</h3>
+                        <p>Schneller Radwechsel, fachgerechte Reifenmontage auf Alufelgen oder Stahlfelgen, präzises Auswuchten und Einlagerung Ihrer Saisonreifen.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Wechsel ab <span>29 €</span></div>
+                            <a href="#booking" class="service-link start-wizard-btn" data-select-service="reifen">Buchen <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 4 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fas fa-gears"></i></div>
+                        <h3>Verschleißreparaturen</h3>
+                        <p>Schneller Austausch defekter Verschleißteile wie Bremsbeläge, Bremsscheiben, Stoßdämpfer, Auspuffanlagen oder auch komplette Kupplungswechsel.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Ersatzteile in <span>Erstausrüsterqualität</span></div>
+                            <a href="#booking" class="service-link start-wizard-btn" data-select-service="reparaturen">Buchen <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 5 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fas fa-wind"></i></div>
+                        <h3>Klimaservice</h3>
+                        <p>Klimaanlagen-Wartung, Dichtheitsprüfung, Desinfektion der Lüftungskanäle gegen Bakterien und Auffüllen des Kältemittels (R134a & R1234yf).</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Klimaservice ab <span>69 €</span></div>
+                            <a href="#booking" class="service-link start-wizard-btn" data-select-service="klima">Buchen <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 6 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fas fa-car-battery"></i></div>
+                        <h3>Diagnose & Elektronik</h3>
+                        <p>Fehlersuche in der Bordelektronik. Mit modernsten Diagnosegeräten lesen wir Steuergeräte aus, um Fehler exakt zu lokalisieren und zu beheben.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Fehlerspeicher <span>ab 39 €</span></div>
+                            <a href="#booking" class="service-link start-wizard-btn" data-select-service="diagnose">Buchen <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Service 7 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fas fa-car-burst"></i></div>
+                        <h3>Unfallinstandsetzung</h3>
+                        <p>Fachgerechte Karosserie- und Richtarbeiten nach einem Unfall. Wir beseitigen Blechschäden, übernehmen Lackierarbeiten und wickeln den Schaden direkt mit Ihrer Versicherung ab.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Schadensabwicklung <span>im Haus</span></div>
+                            <a href="#booking" class="service-link start-wizard-btn" data-select-service="unfall">Buchen <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Service 8 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fas fa-crosshairs"></i></div>
+                        <h3>Beissbarth Q.Lign Achsvermessung</h3>
+                        <p>Präzise 3D-Fahrwerksvermessung auf unserem hochmodernen Beissbarth Q.Lign Prüfstand. Schont Ihre Reifen, verringert den Kraftstoffverbrauch und stellt den perfekten Geradeauslauf sicher.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Spur einstellen <span>ab 59 €</span></div>
+                            <a href="#booking" class="service-link start-wizard-btn" data-select-service="vermessung">Buchen <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!-- Reifen & Achsvermessung Section (Spezialaktionen) -->
+        <section id="tires" class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <div class="text-center section-header reveal">
+                    <h2>Reifenservice & Achsvermessung</h2>
+                    <p>Fahrstabilität, weniger Reifenverschleiß und maximale Sicherheit dank modernstem Beissbarth Q.Lign 3D-Achsvermessungs-Prüfstand.</p>
+                </div>
+
+                <div class="about-grid" style="margin-top: 3rem;">
+                    <div class="reveal">
+                        <h3>Präzision auf dem Prüfstand</h3>
+                        <p style="margin-top: 1.5rem;">
+                            Schon kleine Erschütterungen (z. B. durch Schlaglöcher oder Bordsteinkanten) können die Fahrwerksgeometrie verstellen. Die Folgen sind ungleichmäßiger Reifenabrieb, erhöhter Kraftstoffverbrauch und ein unsicheres Fahrverhalten.
+                        </p>
+                        <p>
+                            Mit unserem **hochmodernen Beissbarth Q.Lign 3D-Achsvermessungs-Prüfstand** vermessen wir Ihr Fahrzeug in wenigen Minuten hochpräzise. Die Kamerasysteme ermitteln die genaue Ausrichtung der Räder im Raum und wir stellen Spur und Sturz exakt nach Herstellervorgaben ein.
+                        </p>
+                        
+                        <div class="about-stats" style="grid-template-columns: 1fr; gap: 1rem; margin-top: 2rem;">
+                            <div class="stat-item" style="display: flex; align-items: center; gap: 1.5rem; padding: 1.25rem;">
+                                <div class="feature-icon-wrapper flex-center" style="background-color: var(--accent-glow); margin: 0; width: 50px; height: 50px;"><i class="fas fa-arrows-spin"></i></div>
+                                <div>
+                                    <h4 style="margin: 0; font-size: 1.1rem;">Beissbarth Q.Lign 3D-Präzision</h4>
+                                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Erhöht die Lebensdauer Ihrer Reifen erheblich.</p>
+                                </div>
+                            </div>
+                            <div class="stat-item" style="display: flex; align-items: center; gap: 1.5rem; padding: 1.25rem;">
+                                <div class="feature-icon-wrapper flex-center" style="background-color: var(--accent-glow); margin: 0; width: 50px; height: 50px;"><i class="fas fa-gauge-high"></i></div>
+                                <div>
+                                    <h4 style="margin: 0; font-size: 1.1rem;">Spritersparnis & Sicherheit</h4>
+                                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Geringerer Rollwiderstand schont die Umwelt und den Geldbeutel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-2 reveal">
+                        <!-- Promotion 1 -->
+                        <div class="service-card glass-panel promo-highlight-card" style="display: flex; flex-direction: column;">
+                            <div class="promo-badge">Beliebt</div>
+                            <div class="service-icon" style="font-size: 2.2rem;"><i class="fas fa-crosshairs"></i></div>
+                            <h3>3D-Achsvermessung</h3>
+                            <p style="font-size: 0.9rem;">Präzise Spur- und Sturzvermessung auf unserem Beissbarth Q.Lign Prüfstand inklusive professioneller Justierung der Achsgeometrie.</p>
+                            <div class="service-card-footer" style="margin-top: auto; padding-top: 1rem;">
+                                <div class="service-price">Aktionspreis <span>59 €</span></div>
+                                <button class="btn btn-primary promo-booking-btn" data-promo="achsvermessung" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Jetzt anfragen</button>
+                            </div>
+                        </div>
+
+                        <!-- Promotion 2 -->
+                        <div class="service-card glass-panel" style="display: flex; flex-direction: column;">
+                            <div class="service-icon" style="font-size: 2.2rem;"><i class="fas fa-circle-notch"></i></div>
+                            <h3>Radwechsel + Beissbarth 3D-Achsmessung</h3>
+                            <p style="font-size: 0.9rem;">Rundum-sorglos-Paket: Kompletter Radwechsel (4 Räder) inklusive Auswuchten und anschließender Beissbarth Q.Lign 3D-Achsvermessung.</p>
+                            <div class="service-card-footer" style="margin-top: auto; padding-top: 1rem;">
+                                <div class="service-price">Komplettpaket <span>89 €</span></div>
+                                <button class="btn btn-primary promo-booking-btn" data-promo="reifen-achse" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Jetzt anfragen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reifen-Finder Section (Reifen Göggel Großlager-Abfrage) -->
+        <section id="tire-finder" class="section" style="background-color: var(--bg-primary);">
+            <div class="container">
+                <div class="text-center section-header reveal">
+                    <h2>Reifen-Finder & Großlager-Abfrage</h2>
+                    <p>Wählen Sie Ihre Reifendimension. Wir fragen Bestände und Tagespreise im Reifen Göggel Großhandel ab und unterbreiten Ihnen ein Angebot inkl. Montage.</p>
+                </div>
+
+                <!-- Configurator Form -->
+                <div class="wizard-container glass-panel reveal" style="max-width: 900px; margin-top: 3rem; padding: 2rem;">
+                    <form id="tire-finder-form" onsubmit="event.preventDefault();" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1.25rem; align-items: flex-end;">
+                        <div class="form-group">
+                            <label class="form-label" for="tire-width">Breite</label>
+                            <select id="tire-width" class="form-input" style="background-color: var(--bg-tertiary);">
+                                <option value="175">175 mm</option>
+                                <option value="185">185 mm</option>
+                                <option value="195">195 mm</option>
+                                <option value="205" selected>205 mm</option>
+                                <option value="225">225 mm</option>
+                                <option value="245">245 mm</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="tire-aspect">Querschnitt</label>
+                            <select id="tire-aspect" class="form-input" style="background-color: var(--bg-tertiary);">
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                                <option value="55" selected>55</option>
+                                <option value="60">60</option>
+                                <option value="65">65</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="tire-size">Zoll</label>
+                            <select id="tire-size" class="form-input" style="background-color: var(--bg-tertiary);">
+                                <option value="15">R15</option>
+                                <option value="16" selected>R16</option>
+                                <option value="17">R17</option>
+                                <option value="18">R18</option>
+                                <option value="19">R19</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="tire-type">Reifenart</label>
+                            <select id="tire-type" class="form-input" style="background-color: var(--bg-tertiary);">
+                                <option value="sommer" selected>Sommerreifen</option>
+                                <option value="winter">Winterreifen</option>
+                                <option value="allwetter">Allwetterreifen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="tire-brand-class">Klasse</label>
+                            <select id="tire-brand-class" class="form-input" style="background-color: var(--bg-tertiary);">
+                                <option value="all" selected>Alle Marken</option>
+                                <option value="premium">Premiummarken</option>
+                                <option value="quality">Budget/Qualität</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="submit" id="search-tires-btn" class="btn btn-primary" style="width: 100%; padding: 0.875rem; font-size: 0.95rem; justify-content: center;"><i class="fas fa-magnifying-glass"></i> Bestände prüfen</button>
+                        </div>
+                    </form>
+
+                    <!-- Loading Indicator -->
+                    <div id="tire-loading" style="display: none; text-align: center; padding: 3rem 0;">
+                        <i class="fas fa-spinner fa-spin" style="font-size: 3rem; color: var(--accent); margin-bottom: 1.5rem;"></i>
+                        <h4 style="font-weight: 600;">Verbindung zum Reifen Göggel B2B-Portal wird hergestellt...</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 0 0;">Wholesale-Lagerbestände und aktuelle Tagespreise werden abgerufen.</p>
+                    </div>
+
+                    <!-- Reifen Results -->
+                    <div id="tire-results-container" style="margin-top: 2rem; display: none;">
+                        <div id="tire-results-grid" style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+                            <!-- Dynamically populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teilesuche Section -->
+        <section id="parts" class="section parts-search-section">
+            <div class="container">
+                <div class="text-center section-header reveal">
+                    <h2>Ersatzteile & Preis-Check</h2>
+                    <p>Suchen Sie in unserem integrierten Teilekatalog nach passenden Komponenten. Angebot mit Einbau direkt anfordern.</p>
+                </div>
+
+                <!-- Search box -->
+                <div class="search-box-wrapper reveal">
+                    <span class="search-icon-inside"><i class="fas fa-search"></i></span>
+                    <input type="text" id="parts-search-input" class="parts-search-input" placeholder="Nach Ersatzteilen oder Automarke suchen (z.B. Bremsen, Filter, Zündkerzen, VW, Audi)...">
+                </div>
+
+                <!-- Dynamic Search Results -->
+                <div class="parts-results-container reveal">
+                    <div id="parts-results-grid" class="parts-results-grid">
+                        <!-- Will be dynamically populated by JS, shows default items on load -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gebrauchtwagen Section -->
+        <section id="cars" class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <div class="text-center section-header reveal">
+                    <h2>Gebrauchtwagen & Fahrzeugverkauf</h2>
+                    <p>Entdecken Sie unsere aktuellen Fahrzeugangebote. Ob gepflegte Fahrzeuge aus unserem eigenen Bestand oder attraktive Angebote im Kundenauftrag.</p>
+                </div>
+                
+                <!-- Filter Tabs -->
+                <div class="cars-filter-container reveal" style="display: flex; justify-content: center; gap: 1rem; margin: 2.5rem 0 3rem 0; flex-wrap: wrap;">
+                    <button class="btn btn-secondary filter-btn active" data-filter="all">Alle Fahrzeuge</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="eigene">Eigene Fahrzeuge</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="kundenauftrag">In Kundenauftrag</button>
+                </div>
+                
+                <!-- Cars Grid -->
+                <div id="cars-grid" class="grid grid-2 reveal">
+                    <!-- Dynamically populated by app.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="section why-us">
+            <div class="container">
+                <div class="text-center section-header reveal">
+                    <h2>Ihre Vorteile bei uns</h2>
+                    <p>Qualität und Kundennähe stehen im Zentrum unseres Handwerks.</p>
+                </div>
+                
+                <div class="grid grid-4 reveal">
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper flex-center">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div>
+                            <h3>Meisterqualität</h3>
+                            <p>Alle Arbeiten werden unter Aufsicht und Anleitung eines erfahrenen Kfz-Meisters durchgeführt.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper flex-center">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <div>
+                            <h3>Faire Preise</h3>
+                            <p>Transparente Kostenaufstellungen und vorherige Absprachen. Keine bösen Überraschungen.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper flex-center">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h3>Schnelle Abwicklung</h3>
+                            <p>Dank optimierter Abläufe und bester Teileversorgung ist Ihr Auto schnell wieder einsatzbereit.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper flex-center">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div>
+                            <h3>Persönlicher Service</h3>
+                            <p>Als inhabergeführter Betrieb nehmen wir uns noch Zeit für Sie und erklären verständlich jeden Schritt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <div class="reveal">
+                    <h2>Das Autoservice / Wolfgang Dietz</h2>
+                    <p style="margin-top: 1.5rem;">
+                        Unsere freie Kfz-Werkstatt in Oberkochen steht für zuverlässigen Rundum-Service auf höchstem technischem Niveau. Geführt von Kfz-Meister Wolfgang Dietz, sind wir stolz darauf, unseren Kunden eine ehrliche und qualifizierte Beratung zu bieten.
+                    </p>
+                    <p>
+                        Egal ob neueres Fahrzeug mit komplexer Elektronik oder bewährter Gebrauchtwagen: Wir verfügen über moderne Diagnosetools und das nötige Fachwissen, um Reparaturen an allen Modellen nach strengen Vorgaben fachgerecht durchzuführen. Bei uns steht die Kundenzufriedenheit an erster Stelle – das spüren Sie ab dem ersten Moment.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item text-center">
+                            <div class="stat-num">15+</div>
+                            <div class="stat-label">Jahre Erfahrung</div>
+                        </div>
+                        <div class="stat-item text-center">
+                            <div class="stat-num">1</div>
+                            <div class="stat-label">Meistertitel</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-img-wrapper reveal" style="margin-left: 2rem;">
+                    <div class="about-img-border"></div>
+                    <div class="hero-image-wrapper">
+                        <img src="assets/workshop_hero.png" alt="Inhaber Wolfgang Dietz bei der Arbeit" class="hero-image" style="height: 380px;">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Testimonials Sektion -->
+        <section id="reviews" class="testimonials section">
+            <div class="container">
+                <div class="text-center section-header reveal">
+                    <h2>Was Kunden über uns sagen</h2>
+                    <p>Echte Bewertungen von zufriedenen Autofahrern aus der Region.</p>
+                </div>
+                
+                <div class="slider-container glass-panel reveal">
+                    <div class="testimonial-track">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="testimonial-text">
+                                    "Hervorragende Werkstatt! Wolfgang Dietz hat mein Fahrzeug am selben Tag repariert, nachdem andere Werkstätten keinen Fehler finden konnten. Absolut kompetent und sehr faire Preise!"
+                                </p>
+                                <div class="author-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Stefan K.</h4>
+                                    <p>aus Aalen</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="testimonial-text">
+                                    "Wir bringen alle unsere Familienautos für den Service und Reifenwechsel zu Wolfgang Dietz. Der Service ist immer freundlich, pünktlich und super verlässlich. Top Empfehlung in Oberkochen!"
+                                </p>
+                                <div class="author-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Melanie B.</h4>
+                                    <p>aus Oberkochen</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="testimonial-text">
+                                    "Ehrlicher Service! Hier wird man noch kompetent beraten und es werden keine unnötigen Reparaturen erfunden. Meine Bremsen wurden schnell getauscht. Ich bin absolut zufrieden!"
+                                </p>
+                                <div class="author-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Thomas M.</h4>
+                                    <p>aus Königsbronn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slider dot navigations -->
+                    <div class="slider-nav"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Map Section -->
+        <section id="contact" class="section">
+            <div class="container contact-grid">
+                <div class="reveal">
+                    <h2>Kontakt & Anfahrt</h2>
+                    <p style="margin-top: 1.5rem;">Haben Sie Fragen oder möchten Sie direkt telefonisch einen Termin absprechen? Rufen Sie uns an oder besuchen Sie uns vor Ort.</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-item">
+                            <div class="contact-item-icon flex-center"><i class="fas fa-phone"></i></div>
+                            <div class="contact-item-details">
+                                <h4>Telefonnummer</h4>
+                                <p><a href="tel:07364919778" style="font-weight: 700; color: var(--accent);">07364 919778</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon flex-center"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-item-details">
+                                <h4>E-Mail-Adresse</h4>
+                                <p><a href="mailto:wolfgang.dietz@das-autoservice.de">wolfgang.dietz@das-autoservice.de</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon flex-center"><i class="fas fa-map-location-dot"></i></div>
+                            <div class="contact-item-details">
+                                <h4>Werkstatt-Adresse</h4>
+                                <p>Heidenheimer Straße 114, 73447 Oberkochen</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon flex-center"><i class="fas fa-clock"></i></div>
+                            <div class="contact-item-details">
+                                <h4>Öffnungszeiten</h4>
+                                <p>Montag – Freitag: 08:00 – 17:00 Uhr</p>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Samstag & Sonntag: Geschlossen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reveal">
+                    <!-- Leaflet map container -->
+                    <div id="map" class="map-container"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <img src="assets/logo_transparent.png?v=4" alt="D.A.S. Dietz Autoservice" class="logo-img">
+                    </a>
+                    <p>Freie Meisterwerkstatt für Pkw aller Marken in Oberkochen. Ehrlich, kompetent, verlässlich.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Startseite</a></li>
+                        <li><a href="#services">Leistungen</a></li>
+                        <li><a href="#cars">Gebrauchtwagen</a></li>
+                        <li><a href="#booking">Termin vereinbaren</a></li>
+                        <li><a href="#about">Über uns</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Dienstleistungen</h4>
+                    <ul class="footer-links">
+                        <li><a href="#booking" class="start-wizard-btn" data-select-service="wartung">Inspektion</a></li>
+                        <li><a href="#booking" class="start-wizard-btn" data-select-service="tuev">TÜV / AU</a></li>
+                        <li><a href="#booking" class="start-wizard-btn" data-select-service="reifen">Reifenservice</a></li>
+                        <li><a href="#booking" class="start-wizard-btn" data-select-service="reparaturen">Verschleißreparaturen</a></li>
+                        <li><a href="#booking" class="start-wizard-btn" data-select-service="diagnose">Elektronik-Diagnose</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <p style="margin-bottom: 0.5rem;">Das Autoservice / W. Dietz</p>
+                    <p style="margin-bottom: 0.5rem;">Heidenheimer Straße 114<br>73447 Oberkochen</p>
+                    <p style="font-weight: 600;">Tel: 07364 919778</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Das Autoservice. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ersatzteil-Anfrage Modal -->
+    <div id="parts-modal-overlay" class="modal-overlay">
+        <div class="parts-modal glass-panel">
+            <span class="modal-close-btn" id="close-parts-modal"><i class="fas fa-xmark"></i></span>
+            <h3 class="modal-title">Angebot anfragen</h3>
+            <p class="modal-desc">Fordern Sie ein unverbindliches Werkstatt-Angebot (inkl. Einbau) für dieses Ersatzteil an. Wir melden uns mit dem genauen Preis per E-Mail oder Anruf bei Ihnen.</p>
+            
+            <div class="modal-part-details">
+                <div class="modal-part-text">
+                    <h5 id="modal-part-name">Bremsbelagsatz, Scheibenbremse</h5>
+                    <p id="modal-part-meta">Hersteller: Bosch | Art-Nr: BO-129481</p>
+                </div>
+                <div class="modal-part-price">
+                    <span>UVP des Herstellers</span>
+                    <strong id="modal-part-uvp">129,90 €</strong>
+                </div>
+            </div>
+            
+            <form id="parts-inquiry-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label class="form-label" for="parts-client-name">Ihr Name *</label>
+                    <input class="form-input" type="text" id="parts-client-name" placeholder="z.B. Max Mustermann" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="parts-client-phone">Telefonnummer *</label>
+                    <input class="form-input" type="tel" id="parts-client-phone" placeholder="z.B. 0170 1234567" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="parts-client-email">E-Mail-Adresse *</label>
+                    <input class="form-input" type="email" id="parts-client-email" placeholder="z.B. max@muster.de" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="parts-client-vehicle">Fahrzeugdaten / Kennzeichen (empfohlen)</label>
+                    <input class="form-input" type="text" id="parts-client-vehicle" placeholder="z.B. VW Golf VII, Kennzeichen: AA-WD-110">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="parts-contact-pref">Gewünschte Rückmeldung per *</label>
+                    <select class="form-input" id="parts-contact-pref" style="background-color: var(--bg-tertiary);" required>
+                        <option value="Telefon & E-Mail" selected>Egal (Telefon oder E-Mail)</option>
+                        <option value="Telefonisch">Telefonisch bevorzugt</option>
+                        <option value="E-Mail">E-Mail bevorzugt</option>
+                    </select>
+                </div>
+                
+                <div class="parts-modal-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-parts-modal" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Abbrechen</button>
+                    <button type="submit" class="btn btn-primary" id="submit-parts-inquiry" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Anfrage abschicken <i class="fas fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Reifen-Anfrage Modal -->
+    <div id="tire-modal-overlay" class="modal-overlay">
+        <div class="parts-modal glass-panel">
+            <span class="modal-close-btn" id="close-tire-modal"><i class="fas fa-xmark"></i></span>
+            <h3 class="modal-title">Reifenangebot anfragen</h3>
+            <p class="modal-desc">Fordern Sie ein unverbindliches Werkstatt-Angebot (inklusive Montage und Wuchten) für diesen Reifen an. Wir prüfen die Lieferfähigkeit und melden uns bei Ihnen.</p>
+            
+            <div class="modal-part-details">
+                <div class="modal-part-text">
+                    <h5 id="modal-tire-name">Continental PremiumContact 6</h5>
+                    <p id="modal-tire-meta">Größe: 205/55 R16 91V | Sommerreifen</p>
+                </div>
+                <div class="modal-part-price">
+                    <span>UVP Schätzpreis</span>
+                    <strong id="modal-tire-price">79,90 €</strong>
+                </div>
+            </div>
+            
+            <form id="tire-inquiry-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label class="form-label" for="tire-client-name">Ihr Name *</label>
+                    <input class="form-input" type="text" id="tire-client-name" placeholder="z.B. Max Mustermann" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="tire-client-phone">Telefonnummer *</label>
+                    <input class="form-input" type="tel" id="tire-client-phone" placeholder="z.B. 0170 1234567" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="tire-client-email">E-Mail-Adresse *</label>
+                    <input class="form-input" type="email" id="tire-client-email" placeholder="z.B. max@muster.de" required>
+                </div>
+                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label class="form-label" for="tire-quantity">Stückzahl *</label>
+                        <select class="form-input" id="tire-quantity" style="background-color: var(--bg-tertiary);" required>
+                            <option value="4" selected>4 Reifen (Kompletter Satz)</option>
+                            <option value="2">2 Reifen (Eine Achse)</option>
+                            <option value="1">1 Reifen (Ersatz)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="tire-service-pref">Montage-Optionen *</label>
+                        <select class="form-input" id="tire-service-pref" style="background-color: var(--bg-tertiary);" required>
+                            <option value="Mit Montage & Wuchten" selected>Montage & Wuchten</option>
+                            <option value="Mit Montage, Wuchten & Einlagerung">Montage & Einlagerung</option>
+                            <option value="Nur Reifen (ohne Montage)">Nur Reifen (Abholung)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="tire-client-vehicle">Fahrzeug (für Kompatibilitäts-Check)</label>
+                    <input class="form-input" type="text" id="tire-client-vehicle" placeholder="z.B. VW Golf VII (Baujahr 2018)">
+                </div>
+                
+                <div class="parts-modal-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-tire-modal" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Abbrechen</button>
+                    <button type="submit" class="btn btn-primary" id="submit-tire-inquiry" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Anfrage abschicken <i class="fas fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Gebrauchtwagen-Anfrage Modal -->
+    <div id="car-modal-overlay" class="modal-overlay">
+        <div class="parts-modal glass-panel">
+            <span class="modal-close-btn" id="close-car-modal"><i class="fas fa-xmark"></i></span>
+            <h3 class="modal-title">Fahrzeug anfragen</h3>
+            <p class="modal-desc">Senden Sie uns eine Anfrage für dieses Fahrzeug. Wir setzen uns zeitnah mit Ihnen in Verbindung, um eine Besichtigung oder Probefahrt zu vereinbaren.</p>
+            
+            <div class="modal-part-details">
+                <div class="modal-part-text">
+                    <h5 id="modal-car-name">Fahrzeugname</h5>
+                    <p id="modal-car-meta">EZ: - | - km | -</p>
+                </div>
+                <div class="modal-part-price">
+                    <span>Kaufpreis</span>
+                    <strong id="modal-car-price">- €</strong>
+                </div>
+            </div>
+            
+            <form id="car-inquiry-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label class="form-label" for="car-client-name">Ihr Name *</label>
+                    <input class="form-input" type="text" id="car-client-name" placeholder="z.B. Max Mustermann" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="car-client-phone">Telefonnummer *</label>
+                    <input class="form-input" type="tel" id="car-client-phone" placeholder="z.B. 0170 1234567" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="car-client-email">E-Mail-Adresse *</label>
+                    <input class="form-input" type="email" id="car-client-email" placeholder="z.B. max@muster.de" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="car-client-message">Ihre Nachricht / Wunschtermin für Probefahrt (optional)</label>
+                    <textarea class="form-input" id="car-client-message" rows="3" placeholder="Ich interessiere mich für dieses Fahrzeug und würde gerne einen Termin vereinbaren..."></textarea>
+                </div>
+                
+                <div class="parts-modal-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-car-modal" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Abbrechen</button>
+                    <button type="submit" class="btn btn-primary" id="submit-car-inquiry" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Anfrage abschicken <i class="fas fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Leaflet.js Map script (Loads first) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Custom JS script -->
+    <script src="app.js"></script>
+</body>
+</html>
